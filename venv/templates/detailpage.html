@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>InformacoesProfessor</title>
+</head>
+<body>
+<h1>Informacoes</h1>
+    <table border="1">
+        <tr>
+            <td>Nome</td>
+            <td>Materia</td>
+            <td>Curso</td>
+            <td>Carga Horaria</td>
+        </tr>
+        {% for detalhe in detalhes %}
+            <tr>
+                <td>{{Nome}}</td>
+                <td>{{detalhe[0]}}</td>
+                <td>{{detalhe[1]}}</td>
+                <td>{{detalhe[2]}}</td>
+            </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

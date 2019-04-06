@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Faculdade</title>
+</head>
+<body>
+<h1>Lista de Professores</h1>
+    <table border="1">
+        <tr>
+            <td>Professores</td>
+        </tr>
+        {% for professor in professores %}
+         <li><tr><td><a href="/exibirProfessor/{{professor[0]}}">{{professor[0]}}</a></td></tr> </li>
+        {% endfor %}
+    </table>
+</body>
+</html>
